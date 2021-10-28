@@ -1,3 +1,5 @@
+"use strict";
+// ----- Global Variables ----------------------------------------------------------------------------//
 const countriesData = [
     { code: "swe", name: "Sweden" },
     { code: "dk", name: "Denmark" },
@@ -21,9 +23,20 @@ const citiesData = [
     { id: 13, code: "fi", name: "Kouvola" }
 ];
 
+// ----- Event Listener ------------------------------------------------------------------------------//
+
+// ----- Validations ---------------------------------------------------------------------------------//
 function validateForm(event) {
     event.preventDefault();
     //call function´s that validates each input sepratly
-
+    console.log("firstname is valid?", validateFristName());
 }
 
+function validateFristName() {
+    //logic here
+    return false;
+}
+
+// ----- Utility functions ---------------------------------------------------------------------------//
+
+// ----- Functions to run at load of page -------------------------------------------------------------//
